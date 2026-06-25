@@ -5,12 +5,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="472.0" styleClass="container" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="472.0" styleClass="container" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tnho.quizapppv1.PrimaryController">
    <children>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subject" text="English Quiz App" />
       <Button mnemonicParsing="false" text="Quản Lý Câu Hỏi" />
       <Button mnemonicParsing="false" text="Luyện Tập" />
       <Button mnemonicParsing="false" text="Luyện Thi" />
-      <ComboBox fx:id="cbThemes" prefHeight="55.0" prefWidth="150.0" promptText="Chon chu de" styleClass="button" />
+      <ComboBox fx:id="cbThemes" onAction="#changeTheme" prefHeight="55.0" prefWidth="150.0" promptText="Chon chu de" styleClass="button" />
    </children>
 </VBox>

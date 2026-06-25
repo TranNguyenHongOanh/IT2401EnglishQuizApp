@@ -1,6 +1,9 @@
 package com.tnho.quizapppv1;
 
 import com.tnho.utils.MyAlertSingleton;
+import com.tnho.utils.themes.DarkFactory;
+import com.tnho.utils.themes.LightFactory;
+import com.tnho.utils.themes.ThemeManager;
 import com.tnho.utils.themes.ThemeTypes;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -33,6 +36,7 @@ public class PrimaryController implements Initializable{
     }
 
     public void changeTheme(ActionEvent e){
+        this.cbThemes.getSelectionModel().getSelectedItem().updateTheme(this.cbThemes.getScene());
         
     }
 }
