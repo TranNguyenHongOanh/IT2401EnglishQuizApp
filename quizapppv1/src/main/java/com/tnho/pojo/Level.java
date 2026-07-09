@@ -6,7 +6,7 @@ package com.tnho.pojo;
 
 /**
  *
- * @author Admin
+ * @author admin
  */
 public class Level {
     private int id;
@@ -19,6 +19,13 @@ public class Level {
         this.id = id;
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return this.name; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
+    
+    
 
     /**
      * @return the id

@@ -16,6 +16,7 @@ import javafx.stage.Stage;
  * @author Admin
  */
 public class MyStageSingleton {
+
     private static MyStageSingleton instance;
     private final Stage stage;
 
@@ -31,19 +32,19 @@ public class MyStageSingleton {
 
         return instance;
     }
-    
-    public void showStage(String fxml){
-        if(!this.stage.isShowing()){
-            Scene scene;
+
+    public void showStage(String fxml) {
+        if (!this.stage.isShowing()) {
             try {
-                scene = new Scene(new FXMLLoader(App.class.getResource(fxml + ".fxml")).load());
+                Scene scene = new Scene(new FXMLLoader(App.class.getResource(fxml + ".fxml")).load());
+                
                 ThemeManager.applyTheme(scene);
+                
                 this.stage.setScene(scene);
                 this.stage.show();
             } catch (IOException ex) {
-                ex.printStackTrace();
+                System.err.println(ex.getMessage());
             }
-            
         }
     }
 }

@@ -6,7 +6,7 @@ package com.tnho.pojo;
 
 /**
  *
- * @author Admin
+ * @author admin
  */
 public class Category {
     private int id;
@@ -22,7 +22,7 @@ public class Category {
 
     @Override
     public String toString() {
-        return this.name; 
+        return this.name; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
     
 
@@ -53,5 +53,4 @@ public class Category {
     public void setName(String name) {
         this.name = name;
     }
-    
 }

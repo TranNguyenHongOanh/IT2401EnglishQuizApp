@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Admin
+ * @author admin
  */
 public class Question {
     private int id;
@@ -50,7 +50,15 @@ public class Question {
             return this;
         }
         
-        // ...
+        public Builder setLevel(Level lvl) {
+            this.level = lvl;
+            return this;
+        }
+        
+        public Builder setCategory(Category c) {
+            this.category = c;
+            return this;
+        }
         
         public Question build() {
             return new Question(this);

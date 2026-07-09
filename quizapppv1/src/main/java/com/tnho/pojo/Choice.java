@@ -6,7 +6,7 @@ package com.tnho.pojo;
 
 /**
  *
- * @author Admin
+ * @author admin
  */
 public class Choice {
     private int id;
